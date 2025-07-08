@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Comic';
+    src: url(/fonts/comic/Hey\ Comic.ttf);
+}
+@font-face {
+    font-family: 'cocogoose';
+    src: url(/fonts/cocogoose/Cocogoose-Pro-Bold-trial.ttf);
+}
+@font-face{
+  font-family: 'smasher';
+  src: url(/fonts/smasher/Smasher\ 312\ Custom.ttf);
+}
+img{
+    width: 30px;
+    height: 30px;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      background-color: #eeeeff;
+  }
+    
+    .container {
+      display: flex;
+      height: 100vh; /* ocupa 100% da altura da tela */
+    }
+    
+    .esquerda, .direita {
+      flex: 1; /* cada um ocupa 50% */
+      text-align: center;
+    }
+    
+  
+    /* ESQUERDA */
+    .esquerda {
+      background-color: #080808;
+      color: white;
+      border-radius: 0 40px 40px 0px;
+      padding: 20px;
+      max-height: auto;
+    }
+    
+    
+    
+    h1{
+      font-size: 80px;
+      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+      margin: 0px;
+      font-family: 'cocogoose';
+    }
+    label{
+      font-size: 50px;
+      color: #4169E1;
+      font-weight: 700;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 0px;
+    }
+    input{
+      font-size: 39px;
+      padding: 3px;
+      padding-left: 10px;
+      border-radius: 10px;
+      margin: 0;
+      border: 3px solid transparent;
+    }
+    input:focus{
+      border: 3px solid cornflowerblue;
+      box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.9);
+    }
+    button{
+      background-color: #4169E1;
+      border: 1.8px solid #ffffff;
+      font-size: 40px;
+      padding: 6px 16px;
+      border-radius:8px;
+      height: 50px;
+      width: 170px;
+    }
+    .imgCAD{
+      width:40px;
+      height: 40px;
+    }
+     
+  
+  
+      /* DIREITA*/
+      .direita {
+        background-color: #eeeeff;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        max-height: auto;
+      }
+  
+     .rwd{
+      display: flex;
+      justify-content: end;
+      align-items: top;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      /* margin: 40px; */
+  }
+  .rwd h3{
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      margin: 0;
+      margin-right: 10px;
+      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+      font-family: 'smasher';
+  }
+  .imgLOGO{
+    width: 40px;
+    height: 40px;
+  }
+  h2{
+    font-size: 70px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'comic';
+  }
+  
+  .bar-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  
+  background-color: #080808;
+  width: 130vh;
+  height: 50px;
+  text-align: center;
+  }
+  .bar-bottom a{
+    position: fixed;
+    bottom: 5px;
+    color: #eeeeff;
+    font-size: 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 0 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .bar-bottom a:hover{
+    background-color: #4169E1;
+    color: black;
+    border: 2px solid white;
+    transition: .8s;
+    padding: 0 15px;
+    border-radius: 8px;
+  }
+  .resposta{
+    background-color: #707070;
+    border: 5px solid #080808;
+    border-radius: 20px;
+    box-shadow: none 5px 0 rgba(0, 0, 0, 0.342);
+    width: 600px;
+    height: 600px;
+    max-height: 600px;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 57%;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.9);
+    max-height: auto;
+    padding: 30px;
+  }

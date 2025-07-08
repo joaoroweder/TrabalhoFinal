@@ -1,0 +1,13 @@
+button{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.822);
+}

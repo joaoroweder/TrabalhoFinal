@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/styleGeral.css">
+    <link rel="stylesheet" href="cadastrarSaida.css">
+    <script src="cadAluno.js"defer></script>
+    <title>Apagamento</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="esquerda">
+            
+            <h1>Apagar Saídas</h1>
+
+            <div class="box-busca">
+                <input type="text" id="id" placeholder="Código">
+                <button  class="btn-buscar">
+                    <img src="/imgs/lupaPNG.png" alt="Botão" class="imgLupa">
+                </button>
+            </div>
+            <div class="grid-container">
+
+                <div class="grid-form">
+                    <label for="data">Data de Solicitação</label>
+                    <input type="date" id="data" placeholder="Data Solicitação" disabled="">
+                </div>
+                
+                <div class="grid-form">
+                    <label for="horaSaida">Hora de Saida</label>
+                    <input type="time" id="horaSaida" disabled="">
+                </div>
+                
+                <div class="grid-form">
+                    <label for="horaVolta">Hora de Volta</label>
+                    <input type="time" id="horaVolta" disabled="">
+                </div>
+                
+                <div class="grid-form">
+                    <label for="motivo">Motivo</label>
+                    <input type="text" id="motivo" disabled="">
+                </div>
+                <div class="grid-form">
+                    <label for="local">Local</label>
+                    <input type="text" id="local" disabled="">
+                </div>                
+
+                <div class="grid-form">
+                    <label for="status">Status do Pedido</label>
+                    <input type="text" id="status" disabled="">
+                </div>
+                
+                <div class="grid-form">
+                    <label for="nomeAluno">Nome do Aluno</label>   
+                    <input type="text" id="nomeAluno" disabled="">
+                </div>
+                
+                <div class="grid-form">
+                    <label for="nomeProfessor">Nome do Professor</label>
+                    <input type="text" id="nomeProfessor" disabled="">
+                </div>
+
+            </div>
+                
+            <br>
+            <button id="cadastrar">
+                <img src="/imgs/deletePNG.png" alt="Botão" class="imgCAD">
+            </button>
+
+        </div>
+
+
+        <div class="direita">
+
+            <div class="rwd">
+                
+                <h3>ROWEDER</h3>
+                <img src="/imgs/Touch ID.png" alt="LOGO RWD" class="imgLOGO">
+            </div>
+
+            <br><br><br>
+            <br><br>
+            <h2>RESPOSTA</h2>
+
+            <div class="resposta">
+
+                <div id="res"></div>
+
+            </div>
+
+            <div class="bar-bottom">
+                <a href="/home/home.html">HOME</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

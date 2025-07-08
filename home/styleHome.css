@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'newake';
+    src: url(/fonts/newake/NewakeFont-Demo.otf);
+}
+@font-face{
+    font-family: 'cocogoose';
+    src: url(/fonts/cocogoose/Cocogoose-Pro-Bold-trial.ttf);
+}
+@font-face{
+    font-family: 'typographica';
+    src: url(/fonts/typographica/TypoGraphica_demo.otf);
+}
+@font-face{
+    font-family: 'smasher';
+    src: url(/fonts/smasher/Smasher\ 312\ Custom.ttf);
+}
+img{
+    width: 45px;
+    height: 45px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #080808;
+    color: white;
+    text-align: center;
+}
+
+.link-insta{
+    display: flex;
+    justify-items: start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* margin: 40px; */
+}
+.link-insta a{
+    color: white;
+    font-size: 35px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.rwd{
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* margin: 40px; */
+}
+.rwd h3{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    margin-left: 10px;
+    font-family: 'smasher';
+}
+
+h1{
+    font-size: 77px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'cocogoose';
+    margin: 20px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navegs{
+    margin: 60px;
+}
+.navegs h2{
+    font-size: 45px;
+    font-family: 'newake';
+}
+.links{
+    background-color: #eeeeff;
+    border: 3px solid #4169e1;
+    /* color: ; */
+    width: 1632px;
+    height: 92px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.links a{
+    color: #4169E1;
+    font-size: 42px;
+    text-decoration: none;
+    margin: 32px;
+    align-items: center;
+    border: 3px solid transparent;
+    padding: 6px 27px ;
+    font-family: 'typographica';
+}
+.links a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    border: 3px solid black;
+    padding: 6px 27px ;
+    transition: .6s;
+    border-radius: 19px;
+}
+.logoRWD{
+    width: 45px;
+    height: 45px;
+}
