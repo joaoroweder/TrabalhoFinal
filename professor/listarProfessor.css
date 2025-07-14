@@ -168,3 +168,18 @@ img{
     max-height: auto;
     padding: 30px;
   }
+
+
+  
+  .resposta{
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  #res{
+    max-height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }

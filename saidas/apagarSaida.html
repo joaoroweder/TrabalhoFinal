@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home/styleGeral.css">
-    <link rel="stylesheet" href="cadastrarSaida.css">
-    <script src="cadAluno.js"defer></script>
+    <link rel="stylesheet" href="atualizarSaida.css">
+    <script src="apagarSaida.js"defer></script>
     <title>Apagamento</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
             <h1>Apagar Saídas</h1>
 
             <div class="box-busca">
-                <input type="text" id="id" placeholder="Código">
-                <button  class="btn-buscar">
+                <input type="text" id="cod" placeholder="Código">
+                <button  class="btn-buscar" id="buscar">
                     <img src="/imgs/lupaPNG.png" alt="Botão" class="imgLupa">
                 </button>
             </div>
@@ -25,7 +25,7 @@
 
                 <div class="grid-form">
                     <label for="data">Data de Solicitação</label>
-                    <input type="date" id="data" placeholder="Data Solicitação" disabled="">
+                    <input type="date" id="data" disabled="">
                 </div>
                 
                 <div class="grid-form">
@@ -62,10 +62,20 @@
                     <input type="text" id="nomeProfessor" disabled="">
                 </div>
 
-            </div>
+                <div class="grid-form">
+                    <label for="codProfessor">Código do Professor</label>
+                    <input type="text" id="codProfessor" disabled="">
+                </div>
+
+
                 
-            <br>
-            <button id="cadastrar">
+                
+            </div>
+            <label for="codAluno">Código do Aluno</label><br>
+            <input type="text" id="codAluno" disabled="">
+                
+            <br><br>
+            <button id="apagar">
                 <img src="/imgs/deletePNG.png" alt="Botão" class="imgCAD">
             </button>
 

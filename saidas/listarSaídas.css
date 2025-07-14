@@ -162,9 +162,22 @@ img{
     overflow: auto;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     left: 57%;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.9);
     max-height: auto;
     padding: 30px;
+  }
+
+  .resposta{
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  #res{
+    max-height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+    box-sizing: border-box;
   }

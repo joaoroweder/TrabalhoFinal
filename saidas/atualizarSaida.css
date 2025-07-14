@@ -54,7 +54,7 @@
       font-family: 'cocogoose';
     }
     label{
-      font-size: 50px;
+      font-size: 30px;
       color: #4169E1;
       font-weight: 700;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,7 +65,7 @@
       height: 60px;
     }
     input{
-        width: 400px;
+        width: 300px;
       font-size: 39px;
       padding: 3px;
       padding-left: 10px;
@@ -180,11 +180,11 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3px;
     max-width: 1000px; /* aumentei a largura total */
-    margin: auto;
-    padding: 20px;
+    /* margin: auto; */
+    padding: 5px;
     justify-items: center; /* centraliza os inputs horizontalmente */
   }
   

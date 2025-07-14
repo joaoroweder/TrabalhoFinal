@@ -21,7 +21,7 @@ cadastrar.addEventListener('click', (e)=>{
     console.log(valores)
 
     res.innerHTML = ` `
-    fetch(`http://localhost:8081/aluno`, {
+    fetch(`http://localhost:8081/professor`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
@@ -30,7 +30,7 @@ cadastrar.addEventListener('click', (e)=>{
     })
     .then(data => {
       console.log(data)
-      res.innerHTML += `<h2 style=" color: green;">  ALUNO CADASTRADO COM SUCESSO !!!  </h2>`
+      res.innerHTML += `<h2 style="color: green;"> PROFESSOR CADASTRADO COM SUCESSO !!!  </h2>`
       res.style.fontSize = '33px'
       res.style.fontWeight = 'bold'
     })

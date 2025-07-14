@@ -69,6 +69,7 @@ h1{
 h2{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }
 
 
@@ -109,4 +110,50 @@ h2{
 .logoRWD{
     width: 45px;
     height: 45px;
+}
+
+.lista-ordem, .lista-ordem a{
+    background-color: #eeeeff;
+    padding: 3px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 25px;
+    margin: 0 auto;
+    color: #4169e1;
+    text-decoration: none;
+    font-family: 'newake';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lista-ordem{
+    border: 3px solid #4169E1;
+}
+
+.link-lista{
+    background-color: #eeeeff;
+    border: 3px solid #4169e1;
+    /* color: ; */
+    width: 732px;
+    height: 92px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.link-lista a{
+    color: #4169E1;
+    font-size: 42px;
+    text-decoration: none;
+    margin: 32px;
+    align-items: center;
+    border: 3px solid transparent;
+    padding: 6px 27px ;
+    font-family: 'typographica';
+}
+.link-lista a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    border: 3px solid black;
+    padding: 6px 27px ;
+    transition: .6s;
+    border-radius: 19px;
 }

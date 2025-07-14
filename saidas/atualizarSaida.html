@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home/styleGeral.css">
-    <link rel="stylesheet" href="cadastrarSaida.css">
+    <link rel="stylesheet" href="atualizarSaida.css">
     <script src="atualizarSaida.js"defer></script>
     <title>Atualização</title>
 </head>
@@ -16,7 +16,7 @@
             <h1>Atualizar Saídas</h1>
 
             <div class="box-busca">
-                <input type="text" id="id" placeholder="Código">
+                <input type="text" id="cod" placeholder="Código">
                 <button  class="btn-buscar" id="buscar">
                     <img src="/imgs/lupaPNG.png" alt="Botão" class="imgLupa">
                 </button>
@@ -61,9 +61,17 @@
                     <input type="text" id="nomeProfessor" disabled="">
                 </div>
 
-            </div>
+                <div class="grid-form">
+                    <label for="codProfessor">Código do Professor</label>
+                    <input type="text" id="codProfessor" disabled="">
+                </div>
+
                 
-            <br>
+            </div>
+            
+            <label for="codAluno">Código do Aluno</label><br>
+            <input type="text" id="codAluno" disabled="">
+            <br><br>
             <button id="atualizar">
                 <img src="/imgs/PNGcad.png" alt="Botão" class="imgCAD">
             </button>

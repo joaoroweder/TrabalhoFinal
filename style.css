@@ -1,0 +1,163 @@
+@font-face{
+    font-family: 'newake';
+    src: url(/fonts/newake/NewakeFont-Demo.otf);
+}
+@font-face{
+    font-family: 'cocogoose';
+    src: url(/fonts/cocogoose/Cocogoose-Pro-Bold-trial.ttf);
+}
+@font-face{
+    font-family: 'madani';
+    src: url(/fonts/madani/MadaniArabicDEMO-Regular.otf);
+}
+@font-face{
+    font-family: 'tondu';
+    src: url(/fonts/tondu/Tondu-Beta.ttf);
+}
+body{
+    background-color: #080808;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-family: 'cocogoose';
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.navs{
+    background-color: #eeeeff;
+    padding-top: 5px;
+    /* padding: 5px; */
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid #4169e1;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navs a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #4169e1;
+    font-family: 'newake';
+}
+
+.Lista{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 5px solid unset white;
+    gap: 50px;
+}
+.ordens{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+h2{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    font-family: 'madani';
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.link-insta{
+    display: flex;
+    justify-items: start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* margin: 40px; */
+}
+.link-insta a{
+    color: white;
+    font-size: 35px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.rwd{
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* margin: 40px; */
+}
+.rwd h3{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    margin-left: 10px;
+    font-family: 'smasher';
+}
+.logoRWD{
+    width: 45px;
+    height: 45px;
+}
+.img-insta{
+    width: 45px;
+    height: 45px;
+}
+@font-face{
+    font-family: 'smasher';
+    src: url(/fonts/smasher/Smasher\ 312\ Custom.ttf);
+}
+
+.lista{
+    background-color: #efeeff;
+    border: 5px solid #4169e1;
+    border-radius: 20px;
+    width: 80%;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 100px 4px #4169e1ad;
+    overflow: auto;
+    padding: 30px;
+}
+
+
+.lista{
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  #listaPedidos{
+    max-height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  input{
+      padding: 6px;
+      padding-left: 8px;
+    border-radius: 8px;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
