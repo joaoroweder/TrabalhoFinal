@@ -11,3 +11,11 @@ a{
 ::placeholder{
     color: rgba(0, 0, 0, 0.822);
 }
+.rwd h3{
+    cursor: default;
+}
+
+@font-face{
+    font-family: 'wolt';
+    src: url(/fonts/holtwood/HoltwoodOneSC-Regular.ttf);
+}

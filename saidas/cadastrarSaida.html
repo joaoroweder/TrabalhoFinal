@@ -19,7 +19,7 @@
 
                 <div class="grid-form">
                     <label for="data">Data de Solicitação</label>
-                    <input type="date" id="data" placeholder="Data Solicitação">
+                    <input type="date" id="data" placeholder="Data Solicitação" readonly>
                 </div>
                 
                 <div class="grid-form">
@@ -101,4 +101,11 @@
         </div>
     </div>
 </body>
+<script> 
+      document.addEventListener("DOMContentLoaded", () => {
+    const inputData = document.getElementById("data");
+    let hoje = new Date().toISOString().slice(0,10)
+    inputData.value = hoje;
+      })
+</script>
 </html>

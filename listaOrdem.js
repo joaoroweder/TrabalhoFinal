@@ -1,5 +1,6 @@
 const pedidosMap = {};
 
+let res = document.getElementById('res')
 document.addEventListener("DOMContentLoaded", () => {
   const lista = document.getElementById("listaPedidos");
 
@@ -26,10 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         div.innerHTML = `
           <div style="border: 4px dotted violet; padding: 20px; border-radius: 20px; width: 600px; margin: 20px auto;">
+  
           <strong>Código do Pedido:</strong> ${pedido.codSaida}<br>
           <strong>Aluno:</strong> ${pedido.nomeAluno}<br>
+          <strong>Professor:</strong> ${pedido.nomeProfessor}<br>
           <strong>Motivo:</strong> ${pedido.motivo}<br>
-          <strong>Status:</strong> <span id="status-${pedido.codSaida}">${pedido.status}</span><br>
+          <strong>Destino:</strong> ${pedido.localDestino}<br>
+          
+
           <button id="${idAceito}" style="width: 150px; height: 30px; background-color:rgb(231, 231, 231); font-weight: 
             bold; border-radius: 10px; padding-bottom: 5px; padding-top: 1x; font-size: 16px;">
 
@@ -42,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
         div.style = `color: black; font-size: 23px;`
-        
+        // <strong>Status:</strong> <span id="status-${pedido.codSaida}">${pedido.status}</span><br>       
 
         lista.appendChild(div);
 
@@ -85,7 +90,7 @@ function atualizarStatus(codSaida, novoStatus) {
     professor_cod: codProfessor,
   };
 
-  console.log("ENVIANDO PARA O BACK: ", saidaAtualizada);
+  console.log("Dados:",saidaAtualizada);
 
   fetch(`http://localhost:8081/saida/${codSaida}`, {
     method: "PUT",
@@ -98,8 +103,11 @@ function atualizarStatus(codSaida, novoStatus) {
     if (!resp.ok) throw new Error("Erro ao atualizar status");
     document.getElementById(`status-${codSaida}`).textContent = novoStatus;
     alert(`Pedido ${codSaida} atualizado para "${novoStatus}"`);
+    console.log(resp)
+
   })
   .catch(err => {
-    alert("Erro ao atualizar status: " + err.message);
+    console.log(err)
+    // alert("Erro ao atualizar status: " + err.message);
   });
 }
