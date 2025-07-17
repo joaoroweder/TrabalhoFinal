@@ -224,3 +224,27 @@ img{
   ::placeholder{
     font-family: 'wolt';
   }
+  .status-aceito {
+    color: green;
+  }
+  
+  .status-recusado {
+    color: red;
+  }
+  
+  .status-pendente {
+    color: orange;
+  }
+  
+  @font-face{
+    font-family: 'colvetica';
+    src: url(/fonts/colvetica/Coolvetica\ Rg.otf);
+  }
+  @font-face{
+    font-family: 'roboto';
+    src: url(/fonts/roboto/Roboto-Black.ttf);
+  }
+  #res{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: ; */
+  }

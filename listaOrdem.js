@@ -1,6 +1,6 @@
 const pedidosMap = {};
-
 let res = document.getElementById('res')
+
 document.addEventListener("DOMContentLoaded", () => {
   const lista = document.getElementById("listaPedidos");
 
@@ -25,10 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`http://localhost:8081/aluno/${pedido.aluno_cod}`)
         fetch(`http://localhost:8081/professor/${pedido.professor_cod}`)
 
+        
+let classeCor = "";
+
+if (pedido.status === "Aceito") {
+  classeCor = "status-aceito";
+} else if (pedido.status === "Recusado") {
+  classeCor = "status-recusado";
+} else if (pedido.status === "Pendente") {
+  classeCor = "status-pendente";
+}
+
         div.innerHTML = `
           <div style="border: 4px dotted violet; padding: 20px; border-radius: 20px; width: 600px; margin: 20px auto;">
   
-          <strong>Código do Pedido:</strong> ${pedido.codSaida}<br>
+          <strong>Código do Pedido:</strong> ${pedido.codSaida} <br>
+          <strong>Status do Pedido:</strong> <span class="${classeCor}"> ${pedido.status}</span><br>
           <strong>Aluno:</strong> ${pedido.nomeAluno}<br>
           <strong>Professor:</strong> ${pedido.nomeProfessor}<br>
           <strong>Motivo:</strong> ${pedido.motivo}<br>
@@ -46,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ❌ Recusar</button>  
           </div>
         `;
-        div.style = `color: black; font-size: 23px;`
+        div.style = `color: black; font-size: 23px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: normal;`
         // <strong>Status:</strong> <span id="status-${pedido.codSaida}">${pedido.status}</span><br>       
 
         lista.appendChild(div);
@@ -87,7 +99,7 @@ function atualizarStatus(codSaida, novoStatus) {
     nomeAluno: saida.nomeAluno,
     nomeProfessor: saida.nomeProfessor,
     aluno_cod: codAluno,
-    professor_cod: codProfessor,
+    professor_cod: codProfessor
   };
 
   console.log("Dados:",saidaAtualizada);
