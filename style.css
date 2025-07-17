@@ -156,15 +156,16 @@ img{
 
   input{
     padding: 6px;
-    padding-left: 8px;
+    padding-left: 12px;
     border-radius: 10px;
-    width: 200px;
+    width: 280px;
     margin-right: 20px;
     margin-left: 20px;
-    height: 20px;
+    height: 25px;
     margin-bottom: 15px;
     margin-top: 4px;
     font-size: 18px;
+    font-family: 'wolt';
   }
 
   p{
@@ -245,6 +246,15 @@ img{
     src: url(/fonts/roboto/Roboto-Black.ttf);
   }
   #res{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /* font-weight: ; */
+    color: black;
+    font-size: 26px;
+    margin: 50px;
+    font-family: 'smasher';
+    font-weight: NORMAL;
+    /* box-shadow: 0 0 80PX 5PX violet; */
   }

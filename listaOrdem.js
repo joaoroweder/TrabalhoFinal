@@ -1,5 +1,4 @@
 const pedidosMap = {};
-let res = document.getElementById('res')
 
 document.addEventListener("DOMContentLoaded", () => {
   const lista = document.getElementById("listaPedidos");
@@ -36,8 +35,10 @@ if (pedido.status === "Aceito") {
   classeCor = "status-pendente";
 }
 
+        res.innerHTML = ` `
         div.innerHTML = `
-          <div style="border: 4px dotted violet; padding: 20px; border-radius: 20px; width: 600px; margin: 20px auto;">
+          <div style="border: 4px dotted violet; padding: 20px; border-radius: 20px;
+             width: 600px; margin: 40px auto;">
   
           <strong>Código do Pedido:</strong> ${pedido.codSaida} <br>
           <strong>Status do Pedido:</strong> <span class="${classeCor}"> ${pedido.status}</span><br>
@@ -47,18 +48,18 @@ if (pedido.status === "Aceito") {
           <strong>Destino:</strong> ${pedido.localDestino}<br>
           
 
-          <button id="${idAceito}" style="width: 150px; height: 30px; background-color:rgb(231, 231, 231); font-weight: 
+          <button id="${idAceito}" style="width: 200px; height: 40px; background-color:rgb(231, 231, 231); font-weight: 
             bold; border-radius: 10px; padding-bottom: 5px; padding-top: 1x; font-size: 16px;">
 
           ✅ Aceitar</button>
 
-          <button id="${idRecusado}" style="width: 150px; height: 30px; background-color:rgb(231, 231, 231); font-weight: 
+          <button id="${idRecusado}" style="width: 200px; height: 40px; background-color:rgb(231, 231, 231); font-weight: 
             bold; border-radius: 10px; padding-bottom: 5px; padding-top: 1px; font-size: 16px; margin-top: 10px" >
 
           ❌ Recusar</button>  
           </div>
         `;
-        div.style = `color: black; font-size: 23px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: normal;`
+        div.style = `color: black; font-size: 28px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: normal;`
         // <strong>Status:</strong> <span id="status-${pedido.codSaida}">${pedido.status}</span><br>       
 
         lista.appendChild(div);
@@ -78,6 +79,7 @@ if (pedido.status === "Aceito") {
     });
 });
 
+let res = document.getElementById('res')
 function atualizarStatus(codSaida, novoStatus) {
   const saida = pedidosMap[codSaida];
 
@@ -112,10 +114,10 @@ function atualizarStatus(codSaida, novoStatus) {
     body: JSON.stringify(saidaAtualizada)
   })
   .then(resp => {
-    if (!resp.ok) throw new Error("Erro ao atualizar status");
-    document.getElementById(`status-${codSaida}`).textContent = novoStatus;
-    alert(`Pedido ${codSaida} atualizado para "${novoStatus}"`);
-    console.log(resp)
+    alert(`Pedido ${codSaida} atualizado para "${novoStatus}"`)
+    if (!resp.ok) throw new Error("Erro ao atualizar status")
+    document.getElementById(`status-${codSaida}`).textContent = novoStatus
+    // console.log(resp)
 
   })
   .catch(err => {
